@@ -1,0 +1,8 @@
+node_modules
+dist
+log
+DB_backup
+test.sql
+all.sql
+.env
+test
