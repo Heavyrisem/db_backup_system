@@ -20,7 +20,6 @@ async function mysql(client: ftp.Client, name: string, ErrorHandler: (msg: strin
     process.env.MYSQL_USER,
     process.env.MYSQL_PASSWORD,
     process.env.MYSQL_PORT,
-    '--default-character-set=euckr',
   );
   if (!backupResult.status) {
     return ErrorHandler('backupMysql() Failed', backupResult.err);
