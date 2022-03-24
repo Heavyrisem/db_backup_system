@@ -7,7 +7,7 @@ import { GetDate, GetUTCdate, TimeZone, getFilesRecursive } from './lib/utils';
 import { backupMongoDB, backupMysql } from './lib/backup';
 
 dotenv.config();
-const log = new LogSystem('./log');
+const log = new LogSystem('./log/db_backup.log');
 
 async function mysql(client: ftp.Client, name: string, ErrorHandler: (msg: string, err?: any) => Promise<never>) {
   const backupPath = './DB_backup/mysql/all.sql';
