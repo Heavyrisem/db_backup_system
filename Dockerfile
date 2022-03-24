@@ -2,6 +2,7 @@ FROM ubuntu
 
 WORKDIR /app
 COPY . .
+RUN mkdir log
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
