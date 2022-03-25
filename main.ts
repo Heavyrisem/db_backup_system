@@ -79,6 +79,7 @@ async function main() {
       host: process.env.FTP_HOST,
       user: process.env.FTP_USER,
       password: process.env.FTP_PASSWORD,
+      port: Number(process.env.FTP_PORT),
     })
     .catch(async (err) => ErrorHandler('Falied Connect FTP', err));
 

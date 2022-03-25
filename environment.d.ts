@@ -4,6 +4,7 @@ declare global {
       FTP_HOST: string;
       FTP_USER: string;
       FTP_PASSWORD: string;
+      FTP_PORT: string;
 
       MONGO_HOST: string;
       MONGO_PORT: string;
